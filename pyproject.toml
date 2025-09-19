@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "poetry-demo"
+version = "0.1.0"
+description = "A demo project using Poetry and Pendulum"
+authors = ["Sailesh Mishra <sailesh.mishra@analog.com>"]
+readme = "README.md"
+license = "MIT"   # Choose a license (MIT, Apache-2.0, GPL-3.0, etc.)
+homepage = "https://github.com/saileshmishraindia"
+repository = "https://github.com/saileshmishraindia/Chip-Manufacturing-Defect-Dataset-Pandas-Demonstration"
+keywords = ["poetry", "pendulum", "demo", "python-packaging"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+packages = [{ include = "poetry_demo", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+pendulum = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
