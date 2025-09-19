@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry-demo"
+name = "poetry-demo-sailesh"
 version = "0.1.0"
 description = "A demo project using Poetry and Pendulum"
 authors = ["Sailesh Mishra <sailesh.mishra@analog.com>"]
