@@ -1,6 +1,6 @@
 # poetry-demo
-[![codecov](https://codecov.io/gh/saileshmishraindia/poetry-demo/branch/main/graph/badge.svg?token=${{ secrets.CODECOV_TOKEN }})](https://codecov.io/gh/saileshmishraindia/poetry-demo)
-
+[![CI](https://github.com/saileshmishraindia/poetry-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/saileshmishraindia/poetry-demo/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/saileshmishraindia/poetry-demo/branch/main/graph/badge.svg?token=YOUR_TOKEN)](https://codecov.io/gh/saileshmishraindia/poetry-demo)
 
 A demo Python project using [Poetry](https://python-poetry.org/) and [Pendulum](https://pendulum.eustace.io/) for better datetime handling.
 
