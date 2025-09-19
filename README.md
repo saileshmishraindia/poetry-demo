@@ -1,6 +1,6 @@
 # poetry-demo
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9419e225-1443-4468-b819-3c150e8fec3f" />
+[![codecov](https://codecov.io/gh/saileshmishraindia/poetry-demo/branch/main/graph/badge.svg?token=${{ secrets.CODECOV_TOKEN }})](https://codecov.io/gh/saileshmishraindia/poetry-demo)
 
 A demo Python project using [Poetry](https://python-poetry.org/) and [Pendulum](https://pendulum.eustace.io/) for better datetime handling.
 
