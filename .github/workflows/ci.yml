@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies
         run: poetry install
 
-      - name: Run tests
-        run: poetry run pytest -q
+      - name: Run tests with coverage
+        run: poetry run pytest --cov=poetry_demo --cov-report=term-missing
 
