@@ -3,13 +3,14 @@ name: CI
 on:
   push:
     branches: [ "main" ]
+    tags:
+      - "v*"  # run publish job when a tag like v0.1.0 is pushed
   pull_request:
     branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
@@ -25,12 +26,25 @@ jobs:
         run: poetry install
 
       - name: Run tests with coverage
-        run: poetry run pytest --cov=poetry_demo --cov-report=xml --cov-report=term-missing
+        run: poetry run pytest --cov=poetry_demo --cov-report=term-missing
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage.xml
-          fail_ci_if_error: true
+          python-version: "3.10"
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Publish to PyPI
+        env:
+          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_API_TOKEN }}
+        run: poetry publish --build
 
