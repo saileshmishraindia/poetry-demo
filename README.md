@@ -1,5 +1,8 @@
 # poetry-demo
 
+[![codecov](https://codecov.io/gh/saileshmishraindia/poetry-demo/branch/main/graph/badge.svg)](https://codecov.io/gh/saileshmishraindia/poetry-demo)
+ 
+
 A demo Python project using [Poetry](https://python-poetry.org/) and [Pendulum](https://pendulum.eustace.io/) for better datetime handling.
 
 ---
