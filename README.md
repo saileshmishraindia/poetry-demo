@@ -8,7 +8,7 @@ A demo Python project using [Poetry](https://python-poetry.org/) and [Pendulum](
 
 ---
 
-## 🚀 Features
+## 1. Features
 - Demonstrates project management with Poetry
 - Uses `pendulum` for easy datetime operations
 - Includes sample functions:
@@ -17,7 +17,7 @@ A demo Python project using [Poetry](https://python-poetry.org/) and [Pendulum](
 
 ---
 
-## 📦 Installation
+## 2. Installation
 
 Clone the repo and install dependencies with Poetry:
 
